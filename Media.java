@@ -19,11 +19,27 @@ import java.util.Scanner;
     
         if (media>=90) {
             conceito = 'A';
-        } else  {
-
+        } else if (media>= 75) {
+             conceito = 'B';
+        }  else if (media>=60){
+             conceito = 'C';
+        } else if (media>= 40){
+            conceito = 'D';
+        } else {
+            conceito = 'E';
         }
 
-        
+        System.out.println("Media final" + media);
+        System.out.println("Conceito final " + conceito);
+
+        if ( conceito == 'A' & conceito == 'B' & conceito == 'C' ) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+
+        entrada.close();
+
     }
 
 
